@@ -1,16 +1,18 @@
-# sample
+# MVVMっっぽいカウントアプリ
 
-A new Flutter project.
+flutterのアプリ
 
-## Getting Started
+FreezedとRiverpodを用いてMVVMっぽくしている
 
-This project is a starting point for a Flutter application.
+## 構成
 
-A few resources to get you started if this is your first Flutter project:
+View：main.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ViewModel；main_notifier.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Model:main_state.dart
+
+StatelseeWidgetで書かれたカウントアプリの元：before_main.dart
+
+## 動画
+[サンプル.webm](https://user-images.githubusercontent.com/66543967/232810226-00c286a8-cddc-4957-8111-2d775b1ed626.webm)
