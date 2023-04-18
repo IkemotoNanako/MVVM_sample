@@ -8,11 +8,12 @@ FreezedとRiverpodを用いてMVVMっぽくしている
 
 View：main.dart
 
-ViewModel；main_notifier.dart
+ViewModel：main_notifier.dart
 
-Model:main_state.dart
+Model：main_state.dart
 
 StatelseeWidgetで書かれたカウントアプリの元：before_main.dart
 
 ## 動画
-[サンプル.webm](https://user-images.githubusercontent.com/66543967/232810226-00c286a8-cddc-4957-8111-2d775b1ed626.webm)
+
+[サンプル.webm](https://user-images.githubusercontent.com/66543967/232819128-b5011e1e-e278-4254-9c50-823181b5dd5a.webm)
