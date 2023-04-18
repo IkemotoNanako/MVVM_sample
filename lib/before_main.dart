@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sample/main_notifier.dart';
 
 void main() {
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,15 +20,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends ConsumerWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({
     Key? key,
   }) : super(key: key);
-
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final state = ref.watch(mainNotifierProvider);
-    final notifier = ref.watch(mainNotifierProvider.notifier);
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(
@@ -40,7 +35,7 @@ class MyHomePage extends ConsumerWidget {
               'You have pushed the button this many times:',
             ),
             Text(
-              state.count.toString(),
+              '0', // ここの数字を増やす
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
@@ -48,7 +43,7 @@ class MyHomePage extends ConsumerWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          notifier.addCount(state.count);
+          // 数字を増やす関数を呼ぶ
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
